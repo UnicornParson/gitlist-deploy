@@ -1,2 +1,4 @@
-# gitlist-deploy
-gitlist deployment files
+
+Run gitlist in Docker container
+
+# DRAFT!

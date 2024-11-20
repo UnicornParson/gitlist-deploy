@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  gitlist:
+    restart: always
+    build:
+      context: '.'
+      dockerfile: "./Dockerfile"
+    ports:
+      - '8190:80'
+    volumes:
+      - '${GITLIST_HOME}:/usr/share/nginx/html/gitlist/'
+#      - '${GITLIST_NCONF}:/etc/nginx/nginx.conf'
+    shm_size: '4096m'
