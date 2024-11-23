@@ -9,5 +9,4 @@ services:
       - '8190:80'
     volumes:
       - '${GITLIST_HOME}:/usr/share/nginx/html/gitlist/'
-#      - '${GITLIST_NCONF}:/etc/nginx/nginx.conf'
     shm_size: '4096m'
